@@ -1,11 +1,21 @@
-.square {
+square {
     width: 250px;
     height: 250px;
-    border: solid 1px #000000;
-    float: left
+    /* border: solid 1px #000000; */
+    float: left; 
+    
 }
 
 img {
     width: 250px;
     height: 250px;
+}
+.db{
+    
+border: solid pink 2px;
+margin-left: 80px;
+margin-right: 70%;
+padding:10px;
+margin-top: auto;
+
 }

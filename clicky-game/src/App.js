@@ -1,12 +1,14 @@
 // eslint-disable-next-line
-import React, { component } from "react";
+import React, { Component } from "react";
 import Square from "./components/square";
 import "./App.css";
 import Princess from "./princess.json";
-// import NavBar from '.components/NavBar';
-
+import NavBar from './components/NavBar';
+import Banner from './components/Banner';
 import "./components/square.css";
-// import "tachyons";
+
+import "tachyons";
+
 const shuffleArray = (array) => {
   let counter = array.length;
   // while there are elements in the array
@@ -23,7 +25,7 @@ const shuffleArray = (array) => {
   return array;
 };
 
-class App extends component {
+class App extends Component {
   state = {
     currentScore: 0,
     topScore: 0,
@@ -110,8 +112,8 @@ render() {
   return (
     <div className='container'>
 
-      {/* <NavBar topScore={this.state.topScore} currentScore={this.state.currentScore} status={this.state.result}/> */}
-      
+      <NavBar topScore={this.state.topScore} currentScore={this.state.currentScore} status={this.state.result}/>
+      <Banner />
       <div className='mainStyle'>
       {this.state.Princess.map(princess => (
       <Square
